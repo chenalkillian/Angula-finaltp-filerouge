@@ -1,0 +1,46 @@
+.footer {
+    background-color: #f8f9fa; 
+    color: #212529;
+    padding: 50px 0; 
+  }
+  
+  
+  .footer-section {
+    margin-bottom: 30px; 
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .footer-section ul {
+    list-style-type: none; 
+    padding: 5px; 
+    display: flex; 
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 20px; 
+position: relative;
+font-size: 20px;
+padding: 10px;
+left: 580px;
+background-color: #007bff;
+border-radius: 20px;
+  }
+  .footer-section ul li:last-child {
+    margin-right: 0; 
+  }
+  .footer-section ul li a {
+    color: #007bff; 
+    text-decoration: none;color: white;
+ 
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+  }

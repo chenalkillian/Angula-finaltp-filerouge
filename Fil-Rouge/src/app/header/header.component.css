@@ -1,0 +1,10 @@
+.form-inline{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+button{
+    background-color:#5495d5;
+    font-size: 25px;
+}

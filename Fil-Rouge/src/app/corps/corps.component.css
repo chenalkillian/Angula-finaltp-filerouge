@@ -1,0 +1,97 @@
+li{
+    margin:20px;
+    font-size: 20px;   
+    color: black;
+list-style-type: none;
+text-align: center;
+}   
+
+a {
+    display: inline-block; /* Assurez-vous que le lien se comporte comme un élément bloc */
+    width: 50px; /* Définissez la largeur et la hauteur du rond */
+    height: 50px;
+    background-color: red; /* Couleur de fond */
+    margin: 20px;
+    font-size: 20px; /* Taille de police */
+    color: transparent; /* Rendre le texte transparent */
+    text-align: center; /* Centrer le texte */
+    line-height: 100px; /* Centrer verticalement le texte */
+    border-radius: 50%; /* Créer un cercle avec un rayon égal à 50% de la largeur/hauteur */
+    text-decoration: none; /* Supprimer la décoration du lien */
+}
+
+
+h1{
+    text-align: center;
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Style de l'en-tête */
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style des cellules */
+  td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  
+  /* Style des boutons */
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Style des boutons au survol */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  p{
+    text-align: center;
+    font-size: 20px;
+    }
+    
+    button{
+    position: relative;
+margin: 0 auto;
+    }
+
+
+    .ensemble{
+      position: relative;
+      display: flex;
+      width: 100%;
+    }
+
+    .tableau{
+      width: 80%;
+      margin-left: 20px;
+    }
+    .log{
+      width: 80%;
+      margin-left: 20px;
+      text-align: center;
+
+    }

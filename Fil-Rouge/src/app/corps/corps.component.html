@@ -1,0 +1,58 @@
+
+<div class="ensemble">
+<div class="tableau">
+<table>
+    <tr>
+      <th>Status</th>
+      <th>Zone</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td><a id="Salle-a-manger" href="#">z</a></td>
+      <td>Salle à manger</td>
+      <td><button class="Salle-a-manger" (click)="changestatus('Salle-a-manger')">Allumer</button></td>
+    </tr>
+    <tr>
+      <td><a id="SDB" href="#">z</a></td>
+      <td>SDB</td>
+      <td><button class="SDB" (click)="changestatus('SDB')">Allumer</button></td>
+    </tr>
+    <tr>
+      <td><a id="Garage" href="#">z</a></td>
+      <td>Garage</td>
+      <td><button class="Garage" (click)="changestatus('Garage')">Allumer</button></td>
+    </tr>
+    <tr>
+      <td><a id="Pac" href="#">z</a></td>
+      <td>Pac</td>
+      <td><button class="Pac" (click)="changestatus('Pac')">Allumer</button>
+
+</td>
+    </tr>
+    <tr>
+      <td><a id="Buanderie" href="#">z</a></td>
+      <td>Buanderie</td>
+      <td><button class="Buanderie" (click)="changestatus('Buanderie')">Allumer</button></td>
+    </tr>
+    <tr>
+      <td><a id="Piscine" href="#">z</a></td>
+      <td>Piscine</td>
+      <td><button class="Piscine" (click)="changestatus('Piscine')">Allumer</button></td>
+    </tr>
+  </table>
+  </div>
+
+<div class="log" >
+   <h1>Liste des logs</h1>
+  @for (test of listeLog; track test){
+   <li href="#item1">{{test}}</li>
+}
+<p>{{ heure }}</p>
+
+
+
+<button id='heure' (click)="changetime()">Avancer de 30 minutes</button>   </div>
+    
+
+
+</div>
