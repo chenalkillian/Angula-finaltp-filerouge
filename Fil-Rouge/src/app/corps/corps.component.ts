@@ -74,7 +74,6 @@ export class CorpsComponent implements OnInit, OnDestroy {
     // Vérifiez si l'heure actuelle est entre 23h et 7h et si l'alerte n'a pas déjà été affichée
     if ((heureActuelle >= 23 || heureActuelle < 7) && !this.alerteAffichee) {
       // Affichez l'alerte
-      // Mettez à jour la variable pour indiquer que l'alerte a été affichée
       this.alerteAffichee = true;
     }
 
