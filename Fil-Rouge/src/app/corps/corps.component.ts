@@ -5,8 +5,13 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   templateUrl: './corps.component.html',
   styleUrls: ['./corps.component.css']
 })
+
+
+
 export class CorpsComponent implements OnInit, OnDestroy {
-  listeLog = [];
+
+  //déclaration des variables pour l'app
+  listeLog = []; //liste pour les alerte log 
   alerteAffichee = false;
   heure: string;
   intervalId: any;
@@ -31,6 +36,9 @@ export class CorpsComponent implements OnInit, OnDestroy {
     let content = document.querySelectorAll('.' + valeur);
     let mot = valeur; // Correction ici, pour récupérer la valeur directement
 
+
+//Partie Nicolas et Killian  bouton de forçage avec changement de couleurs
+    //switch pour savoir quelle couleur mettre
     switch (test.style.backgroundColor) {
       case 'green':
         test.style.backgroundColor = 'red';
@@ -49,6 +57,20 @@ export class CorpsComponent implements OnInit, OnDestroy {
     }
   }
 
+
+  
+  toggleGarageColor(): void {
+    this.garageColorGreen = !this.garageColorGreen;
+    const garageColor = document.getElementById('Garage');
+    if (this.garageColorGreen) {
+      garageColor.style.backgroundColor = 'green';
+    } else {
+      garageColor.style.backgroundColor = 'red';
+    }
+  }
+
+//Partie Lenny et Elyes
+  //actualise l'heure
   actualiserHeure(): void {
     const maintenant = new Date();
     const minutesAvancees = this.heureAvancee * 30;
@@ -112,15 +134,6 @@ export class CorpsComponent implements OnInit, OnDestroy {
     this.heureAvancee++;
   }
 
-  toggleGarageColor(): void {
-    this.garageColorGreen = !this.garageColorGreen;
-    const garageColor = document.getElementById('Garage');
-    if (this.garageColorGreen) {
-      garageColor.style.backgroundColor = 'green';
-    } else {
-      garageColor.style.backgroundColor = 'red';
-    }
-  }
 
   formaterHeure(date: Date): string {
     let heures: number | string = date.getHours();
