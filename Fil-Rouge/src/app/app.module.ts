@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CorpsComponent } from './corps/corps.component';
+import { InstructionComponent } from './instruction/instruction.component';
+import { FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -13,10 +15,13 @@ import { CorpsComponent } from './corps/corps.component';
     HeaderComponent,
     FooterComponent,
     CorpsComponent,
+    InstructionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

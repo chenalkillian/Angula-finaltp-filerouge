@@ -1,0 +1,35 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" method="POST">
+    <div class="form-group">
+        <label for="instruction1">Entrer votre instruction 1 </label>
+        <input type="text" class="form-control" id="instruction1" name="instruction1" [(ngModel)]="donnee[0]" />
+    </div>
+
+    <div class="form-group">
+        <label for="instruction2">Entrer votre instruction 2 </label>
+        <input type="text" class="form-control" id="instruction2" name="instruction2" [(ngModel)]="donnee[1]" />
+    </div>
+
+    <div class="form-group">
+        <label for="instruction3">Entrer votre instruction 3 </label>
+        <input type="text" class="form-control" id="instruction3" name="instruction3" [(ngModel)]="donnee[2]" />
+    </div>
+
+    <div class="form-group">
+        <label for="instruction4">Entrer votre instruction 4 </label>
+        <input type="text" class="form-control" id="instruction4" name="instruction4" [(ngModel)]="donnee[3]" />
+    </div>
+
+    <div class="form-group">
+        <label for="instruction5">Entrer votre instruction 5 </label>
+        <input type="text" class="form-control" id="instruction5" name="instruction5" [(ngModel)]="donnee[4]" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Valider</button>
+
+
+    
+</form>
+<input type="file" (change)="onFileSelected($event)">
+<p>Contenu du fichier JSON :</p>
+<pre>{{ fichierJsonContenu | json }}</pre>
+
